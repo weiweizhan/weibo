@@ -16,6 +16,8 @@
 		211E288C1A440F2A00D2AEA5 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E288B1A440F2A00D2AEA5 /* weiboTests.m */; };
 		211E28981A4412D600D2AEA5 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E28971A4412D600D2AEA5 /* HomeTableViewController.m */; };
 		211E289C1A44133800D2AEA5 /* WeiboMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E289B1A44133800D2AEA5 /* WeiboMessage.m */; };
+		211E28A01A4426C100D2AEA5 /* HomeMsgViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E289E1A4426C100D2AEA5 /* HomeMsgViewCell.m */; };
+		211E28A11A4426C100D2AEA5 /* HomeMsgViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211E289F1A4426C100D2AEA5 /* HomeMsgViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		211E28971A4412D600D2AEA5 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		211E289A1A44133800D2AEA5 /* WeiboMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMessage.h; sourceTree = "<group>"; };
 		211E289B1A44133800D2AEA5 /* WeiboMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMessage.m; sourceTree = "<group>"; };
+		211E289D1A4426C100D2AEA5 /* HomeMsgViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMsgViewCell.h; sourceTree = "<group>"; };
+		211E289E1A4426C100D2AEA5 /* HomeMsgViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMsgViewCell.m; sourceTree = "<group>"; };
+		211E289F1A4426C100D2AEA5 /* HomeMsgViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMsgViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +137,9 @@
 			children = (
 				211E28961A4412D600D2AEA5 /* HomeTableViewController.h */,
 				211E28971A4412D600D2AEA5 /* HomeTableViewController.m */,
+				211E289D1A4426C100D2AEA5 /* HomeMsgViewCell.h */,
+				211E289E1A4426C100D2AEA5 /* HomeMsgViewCell.m */,
+				211E289F1A4426C100D2AEA5 /* HomeMsgViewCell.xib */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 				211E287B1A440F2A00D2AEA5 /* Main.storyboard in Resources */,
 				211E28801A440F2A00D2AEA5 /* LaunchScreen.xib in Resources */,
 				211E287D1A440F2A00D2AEA5 /* Images.xcassets in Resources */,
+				211E28A11A4426C100D2AEA5 /* HomeMsgViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +259,7 @@
 				211E28781A440F2A00D2AEA5 /* ViewController.m in Sources */,
 				211E28751A440F2A00D2AEA5 /* AppDelegate.m in Sources */,
 				211E28721A440F2A00D2AEA5 /* main.m in Sources */,
+				211E28A01A4426C100D2AEA5 /* HomeMsgViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

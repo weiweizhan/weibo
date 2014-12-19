@@ -8,6 +8,7 @@
 
 #import "HomeTableViewController.h"
 #import "WeiboMessage.h"
+#import "HomeMsgViewCell.h"
 
 @interface HomeTableViewController ()
 
@@ -34,11 +35,22 @@
     return [msgs count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 120;
+}
+
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
     WeiboMsg *msg = [msgs objectAtIndex:[indexPath row]];
-    cell.textLabel.text = msg.text;
-    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:msg.avatar]];
+    NSString *name = msg.name;
+    NSURL *avatar = msg.avatar;
+    NSString *text = msg.text;
+    HomeMsgViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeMsgViewCell"];
+    if (cell == nil) {
+        NSArray *arr = [[NSBundle mainBundle] loadNibNamed:@"HomeMsgViewCell" owner:self options:nil];
+        cell = [arr objectAtIndex:0];
+    }
+    [cell initWithData:name theAvatar:avatar theText:text];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     return cell;
 }
 
