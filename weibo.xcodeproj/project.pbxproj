@@ -14,6 +14,8 @@
 		211E287D1A440F2A00D2AEA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211E287C1A440F2A00D2AEA5 /* Images.xcassets */; };
 		211E28801A440F2A00D2AEA5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211E287E1A440F2A00D2AEA5 /* LaunchScreen.xib */; };
 		211E288C1A440F2A00D2AEA5 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E288B1A440F2A00D2AEA5 /* weiboTests.m */; };
+		211E28981A4412D600D2AEA5 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E28971A4412D600D2AEA5 /* HomeTableViewController.m */; };
+		211E289C1A44133800D2AEA5 /* WeiboMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E289B1A44133800D2AEA5 /* WeiboMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		211E28851A440F2A00D2AEA5 /* weiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211E288A1A440F2A00D2AEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211E288B1A440F2A00D2AEA5 /* weiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboTests.m; sourceTree = "<group>"; };
+		211E28961A4412D600D2AEA5 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		211E28971A4412D600D2AEA5 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		211E289A1A44133800D2AEA5 /* WeiboMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMessage.h; sourceTree = "<group>"; };
+		211E289B1A44133800D2AEA5 /* WeiboMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		211E286E1A440F2A00D2AEA5 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				211E28991A44131400D2AEA5 /* Entity */,
 				211E28951A440F3500D2AEA5 /* VC */,
 				211E28731A440F2A00D2AEA5 /* AppDelegate.h */,
 				211E28741A440F2A00D2AEA5 /* AppDelegate.m */,
@@ -123,8 +130,19 @@
 		211E28951A440F3500D2AEA5 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				211E28961A4412D600D2AEA5 /* HomeTableViewController.h */,
+				211E28971A4412D600D2AEA5 /* HomeTableViewController.m */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		211E28991A44131400D2AEA5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				211E289A1A44133800D2AEA5 /* WeiboMessage.h */,
+				211E289B1A44133800D2AEA5 /* WeiboMessage.m */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211E28981A4412D600D2AEA5 /* HomeTableViewController.m in Sources */,
+				211E289C1A44133800D2AEA5 /* WeiboMessage.m in Sources */,
 				211E28781A440F2A00D2AEA5 /* ViewController.m in Sources */,
 				211E28751A440F2A00D2AEA5 /* AppDelegate.m in Sources */,
 				211E28721A440F2A00D2AEA5 /* main.m in Sources */,
