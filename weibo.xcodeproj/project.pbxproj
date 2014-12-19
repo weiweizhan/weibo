@@ -81,6 +81,7 @@
 		211E286E1A440F2A00D2AEA5 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				211E28951A440F3500D2AEA5 /* VC */,
 				211E28731A440F2A00D2AEA5 /* AppDelegate.h */,
 				211E28741A440F2A00D2AEA5 /* AppDelegate.m */,
 				211E28761A440F2A00D2AEA5 /* ViewController.h */,
@@ -117,6 +118,13 @@
 				211E288A1A440F2A00D2AEA5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		211E28951A440F3500D2AEA5 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
