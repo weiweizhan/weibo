@@ -10,7 +10,11 @@
 #import "WeiboMessage.h"
 #import "HomeMsgViewCell.h"
 
+#define HOME_MSG_CELL_HEIGHT 120
+
 @interface HomeTableViewController ()
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *refresh;
 
 @end
 
@@ -24,6 +28,11 @@
     msgs = [msg getMsgs];
 }
 
+- (IBAction)refresh:(id)sender {
+    WeiboMessage *msg = [[WeiboMessage alloc] init];
+    msgs = [msg getMsgs];
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table view data source
 
@@ -36,7 +45,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 120;
+    return HOME_MSG_CELL_HEIGHT;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

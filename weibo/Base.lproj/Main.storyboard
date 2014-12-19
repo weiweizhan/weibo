@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--hot-->
+        <!--newest-->
         <scene sceneID="0UL-gW-T51">
             <objects>
                 <tableViewController id="hvg-Mv-gep" customClass="HomeTableViewController" sceneMemberID="viewController">
@@ -25,7 +25,16 @@
                             <outlet property="delegate" destination="hvg-Mv-gep" id="GEv-dE-IdX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="hot" id="bzh-Ki-q2O"/>
+                    <navigationItem key="navigationItem" title="newest" id="bzh-Ki-q2O">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="X69-qm-gPE">
+                            <connections>
+                                <action selector="refresh:" destination="hvg-Mv-gep" id="TOR-Dc-trx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="refresh" destination="X69-qm-gPE" id="dV7-no-149"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zo9-bo-2wO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
