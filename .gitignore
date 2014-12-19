@@ -13,6 +13,7 @@ xcuserdata
 project.xcworkspace
 profile
 *.moved-aside
-DerivedData
+DerivedData/*
 .idea/
 *.hmap
+*.db
