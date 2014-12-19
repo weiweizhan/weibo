@@ -18,6 +18,7 @@
 		211E289C1A44133800D2AEA5 /* WeiboMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E289B1A44133800D2AEA5 /* WeiboMessage.m */; };
 		211E28A01A4426C100D2AEA5 /* HomeMsgViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E289E1A4426C100D2AEA5 /* HomeMsgViewCell.m */; };
 		211E28A11A4426C100D2AEA5 /* HomeMsgViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211E289F1A4426C100D2AEA5 /* HomeMsgViewCell.xib */; };
+		211E28AB1A44458E00D2AEA5 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E28AA1A44458E00D2AEA5 /* UIImage+RoundedCorner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		211E289D1A4426C100D2AEA5 /* HomeMsgViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMsgViewCell.h; sourceTree = "<group>"; };
 		211E289E1A4426C100D2AEA5 /* HomeMsgViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMsgViewCell.m; sourceTree = "<group>"; };
 		211E289F1A4426C100D2AEA5 /* HomeMsgViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMsgViewCell.xib; sourceTree = "<group>"; };
+		211E28A91A44458E00D2AEA5 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		211E28AA1A44458E00D2AEA5 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 		211E286E1A440F2A00D2AEA5 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				211E28A21A44436A00D2AEA5 /* Util */,
 				211E28991A44131400D2AEA5 /* Entity */,
 				211E28951A440F3500D2AEA5 /* VC */,
 				211E28731A440F2A00D2AEA5 /* AppDelegate.h */,
@@ -151,6 +155,15 @@
 				211E289B1A44133800D2AEA5 /* WeiboMessage.m */,
 			);
 			name = Entity;
+			sourceTree = "<group>";
+		};
+		211E28A21A44436A00D2AEA5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				211E28A91A44458E00D2AEA5 /* UIImage+RoundedCorner.h */,
+				211E28AA1A44458E00D2AEA5 /* UIImage+RoundedCorner.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +269,7 @@
 			files = (
 				211E28981A4412D600D2AEA5 /* HomeTableViewController.m in Sources */,
 				211E289C1A44133800D2AEA5 /* WeiboMessage.m in Sources */,
+				211E28AB1A44458E00D2AEA5 /* UIImage+RoundedCorner.m in Sources */,
 				211E28781A440F2A00D2AEA5 /* ViewController.m in Sources */,
 				211E28751A440F2A00D2AEA5 /* AppDelegate.m in Sources */,
 				211E28721A440F2A00D2AEA5 /* main.m in Sources */,

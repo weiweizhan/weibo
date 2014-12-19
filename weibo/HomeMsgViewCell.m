@@ -7,6 +7,7 @@
 //
 
 #import "HomeMsgViewCell.h"
+#import "UIImage+RoundedCorner.h"
 
 @interface HomeMsgViewCell()
 
@@ -24,6 +25,7 @@
     self.name.text = name;
     self.text.text = text;
     self.avatar.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:avatar]];
+    [self.avatar.image roundedCornerImageWithCornerRadius:5.0];
 }
 
 - (void)awakeFromNib {

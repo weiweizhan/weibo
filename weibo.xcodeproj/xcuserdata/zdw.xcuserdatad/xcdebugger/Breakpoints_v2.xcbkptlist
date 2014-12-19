@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "weibo/HomeMsgViewCell.m"
-            timestampString = "440675248.156687"
+            filePath = "weibo/UIImage+RoundedCorner.m"
+            timestampString = "440682054.756858"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-initWithData:theAvatar:theText:"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-roundedCornerImageWithCornerRadius:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
