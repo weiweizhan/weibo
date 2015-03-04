@@ -23,7 +23,9 @@
 -(void)initWithData:(NSString*)name theAvatar:(NSURL*)avatar theText:(NSString*)text {
     self.name.text = name;
     self.text.text = text;
-    self.avatar.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:avatar]];
+    UIImage *avatarImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:avatar]];
+    self.avatar.image = [self imageWithRoundedCornersSize:avatarImage.size.height/2
+                                               usingImage:avatarImage];
 }
 
 - (void)awakeFromNib {
@@ -36,7 +38,7 @@
     // Configure the view for the selected state
 }
 
-+ (UIImage *)imageWithRoundedCornersSize:(float)cornerRadius usingImage:(UIImage *)original
+- (UIImage *)imageWithRoundedCornersSize:(float)cornerRadius usingImage:(UIImage *)original
 {
     UIImageView *imageView = [[UIImageView alloc] initWithImage:original];
     
