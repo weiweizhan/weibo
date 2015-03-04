@@ -18,6 +18,7 @@
 		211E289C1A44133800D2AEA5 /* WeiboMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E289B1A44133800D2AEA5 /* WeiboMessage.m */; };
 		211E28A01A4426C100D2AEA5 /* HomeMsgViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E289E1A4426C100D2AEA5 /* HomeMsgViewCell.m */; };
 		211E28A11A4426C100D2AEA5 /* HomeMsgViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211E289F1A4426C100D2AEA5 /* HomeMsgViewCell.xib */; };
+		21BE56621AA7258A00DC4C24 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE56611AA7258A00DC4C24 /* ImageUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		211E289D1A4426C100D2AEA5 /* HomeMsgViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMsgViewCell.h; sourceTree = "<group>"; };
 		211E289E1A4426C100D2AEA5 /* HomeMsgViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMsgViewCell.m; sourceTree = "<group>"; };
 		211E289F1A4426C100D2AEA5 /* HomeMsgViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMsgViewCell.xib; sourceTree = "<group>"; };
+		21BE56601AA7258A00DC4C24 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		21BE56611AA7258A00DC4C24 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 		211E28A21A44436A00D2AEA5 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				21BE56601AA7258A00DC4C24 /* ImageUtil.h */,
+				21BE56611AA7258A00DC4C24 /* ImageUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				211E289C1A44133800D2AEA5 /* WeiboMessage.m in Sources */,
 				211E28781A440F2A00D2AEA5 /* ViewController.m in Sources */,
 				211E28751A440F2A00D2AEA5 /* AppDelegate.m in Sources */,
+				21BE56621AA7258A00DC4C24 /* ImageUtil.m in Sources */,
 				211E28721A440F2A00D2AEA5 /* main.m in Sources */,
 				211E28A01A4426C100D2AEA5 /* HomeMsgViewCell.m in Sources */,
 			);
